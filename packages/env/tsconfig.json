@@ -1,0 +1,3 @@
+{
+  "extends": "@paint-to-kid/config/tsconfig.base.json"
+}
