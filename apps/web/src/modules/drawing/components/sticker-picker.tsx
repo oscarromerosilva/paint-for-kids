@@ -72,10 +72,10 @@ export function StickerPicker() {
         <Button
           variant="ghost"
           className={cn(
-            "pointer-events-auto h-14 w-14 shrink-0 rounded-[1.2rem] text-xl transition-all duration-300",
+            "pointer-events-auto h-11 w-11 shrink-0 rounded-[1.2rem] text-xl transition-all duration-300",
             activeTool === "sticker"
-              ? "-translate-y-1 scale-110 bg-indigo-500 text-white shadow-indigo-500/40 shadow-lg hover:bg-indigo-600 hover:text-white"
-              : "bg-transparent text-slate-500 hover:bg-indigo-100 hover:text-indigo-600 active:scale-95",
+              ? "-translate-y-1 bg-indigo-500 text-white shadow-indigo-500/40 shadow-lg hover:bg-indigo-600 hover:text-white"
+              : "bg-transparent text-slate-500 hover:bg-indigo-100 hover:text-indigo-600",
           )}
           aria-label="Sticker Picker"
         >

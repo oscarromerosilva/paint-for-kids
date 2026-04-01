@@ -43,10 +43,10 @@ export function EmojiPicker() {
         <Button
           variant="ghost"
           className={cn(
-            "pointer-events-auto h-14 w-14 shrink-0 rounded-[1.2rem] text-3xl transition-all duration-300",
+            "pointer-events-auto h-11 w-11 shrink-0 rounded-[1.2rem] text-3xl transition-all duration-300",
             activeTool === "emoji"
-              ? "-translate-y-1 scale-110 bg-purple-500 text-white shadow-lg shadow-purple-500/40 hover:bg-purple-600 hover:text-white"
-              : "bg-transparent text-slate-500 hover:bg-purple-100 hover:text-purple-600 active:scale-95",
+              ? "-translate-y-1 bg-purple-500 text-white shadow-lg shadow-purple-500/40 hover:bg-purple-600 hover:text-white"
+              : "bg-transparent text-slate-500 hover:bg-purple-100 hover:text-purple-600",
           )}
           aria-label="Emoji Picker"
         >

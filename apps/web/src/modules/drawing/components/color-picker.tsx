@@ -35,7 +35,7 @@ export function ColorPicker() {
       <PopoverTrigger asChild>
         <Button
           variant="outline"
-          className="h-16 w-16 rounded-full border-4"
+          className="h-12 w-12 rounded-full border-4"
           style={{
             backgroundColor: selectedColor,
             borderColor: "var(--border)",
@@ -53,9 +53,7 @@ export function ColorPicker() {
                   type="button"
                   key={color}
                   className={`h-8 w-8 rounded-full border-1 border-white ${
-                    selectedColor === color
-                      ? "scale-110 border-primary"
-                      : "border-border"
+                    selectedColor === color ? "border-primary" : "border-border"
                   } transition-transform`}
                   style={{ backgroundColor: color }}
                   onClick={() => {
