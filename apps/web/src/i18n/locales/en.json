@@ -1,0 +1,31 @@
+{
+  "tools": {
+    "select": "Select Tool",
+    "freehand": "Brush Tool",
+    "eraser": "Eraser Tool",
+    "background": "Background Color",
+    "circle": "Add Circle",
+    "square": "Add Square",
+    "triangle": "Add Triangle",
+    "text": "Add Text",
+    "undo": "Undo",
+    "redo": "Redo",
+    "clear": "Clear Canvas",
+    "export": "Export Canvas"
+  },
+  "colors": {
+    "red": "Red",
+    "orange": "Orange",
+    "yellow": "Yellow",
+    "green": "Green",
+    "blue": "Blue",
+    "purple": "Purple",
+    "pink": "Pink",
+    "black": "Black",
+    "white": "White"
+  },
+  "actions": {
+    "open_color_picker": "Open generic color picker",
+    "close": "Close"
+  }
+}

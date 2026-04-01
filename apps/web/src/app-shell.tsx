@@ -1,8 +1,7 @@
 import { Outlet } from "react-router";
-
-import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { LandscapeLock } from "./shared/components/landscape-lock";
 
 function RoutedLayout() {
   return (
@@ -12,8 +11,8 @@ function RoutedLayout() {
       disableTransitionOnChange
       storageKey="vite-ui-theme"
     >
-      <div className="grid h-svh grid-rows-[auto_1fr]">
-        <Header />
+      <div className="relative flex h-screen w-screen flex-col overflow-hidden bg-background">
+        <LandscapeLock />
         <Outlet />
       </div>
       <Toaster richColors />

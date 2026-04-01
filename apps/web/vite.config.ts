@@ -1,6 +1,6 @@
+import path from "node:path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
-import path from "node:path";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
@@ -11,10 +11,15 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
-        name: "paint-to-kid",
-        short_name: "paint-to-kid",
-        description: "paint-to-kid - PWA Application",
+        name: "Kids Drawing PWA",
+        short_name: "DrawingPWA",
+        description: "A fun and simple kids drawing application",
         theme_color: "#0c0c0c",
+        display: "fullscreen",
+        orientation: "landscape",
+      },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
       },
       pwaAssets: { disabled: false, config: true },
       devOptions: { enabled: true },

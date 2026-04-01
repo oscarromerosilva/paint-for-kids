@@ -121,8 +121,13 @@
   }
   body {
     @apply font-sans bg-background text-foreground;
+    overscroll-behavior-y: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
   html {
     @apply font-sans;
+    overscroll-behavior-y: none;
   }
 }
